@@ -1,6 +1,13 @@
 :root {
     --ms-sidebar-bg-color: #051e34;
-    --ms-nav-height: 80px;
+    --ms-nav-height: 100px;
+    --ms-sidebar-width: 70px;
+}
+
+@media screen and (min-width: 992px) {
+    :root {
+        --ms-sidebar-width: 90px;
+    }
 }
 
 /* RESET */
@@ -25,7 +32,7 @@ nav {
 /* Sidebar */
 
 .sidebar {
-    width: 80px;
+    width: var(--ms-sidebar-width);
     height: 100%;
     background-color: var(--ms-sidebar-bg-color);
 }
@@ -41,22 +48,8 @@ main {
     height: 100%
 }
 
-.dashboard {
-    width: calc(100% - 80px);
+.main-content {
+    width: calc(100% - var(--ms-sidebar-width));
     background-color: green;
     overflow-y: auto;
-}
-
-/* SCREEN MQ */
-
-/* Tablet */
-
-@media screen and (min-width: 768px) {
-    .sidebar {
-        width: 100px;
-    }
-
-    .dashboard {
-        width: calc(100% - 100px);
-    }
 }
