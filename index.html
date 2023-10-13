@@ -36,11 +36,23 @@
         <div class="nav-container">
           <div class="container-fluid d-flex align-items-center">
             <!-- Logo -->
-            <img class="logo-img d-lg-none" src="img/mobile-logo.png" alt="logo mobile boolean">
-            <img class="d-none d-lg-inline-block" src="img/logo.svg" alt="logo desktop boolean">
+            <img
+              class="logo-img d-lg-none"
+              src="img/mobile-logo.png"
+              alt="logo mobile boolean"
+            />
+            <img
+              class="d-none d-lg-inline-block"
+              src="img/logo.svg"
+              alt="logo desktop boolean"
+            />
             <!-- /Logo -->
             <!-- Ricerca -->
-            <input class="search flex-grow-1 ms-4 me-4 p-2 border-0 rounded" type="text" placeholder="Prova a cercare: Lezioni di Laravel">
+            <input
+              class="search flex-grow-1 ms-4 me-4 p-2 border-0 rounded"
+              type="text"
+              placeholder="Prova a cercare: Lezioni di Laravel"
+            />
             <!-- /Ricerca -->
             <!-- Actions -->
             <div class="desktop-actions d-none d-lg-flex gap-4 me-4">
@@ -65,10 +77,37 @@
             <!-- Header -->
             <header class="d-flex">
               <div class="container-fluid">
-                <div class="row d-flex flex-column flex-md-row mt-3">
-                  <div class="col-12 col-md-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
-                  <div class="col-12 col-md-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
-                  <div class="col-12 col-md-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                <div class="row d-flex flex-column align-items-sm-center align-items-md-start g-sm-4 flex-md-row mt-2 text-white fw-medium">
+                  <!-- Nuovo studente -->
+                  <div class="col-12 col-md-4 col-lg-3 order-md-5 d-flex align-items-center gap-4">
+                    <span>Nuovo Studente</span>
+                    <a><i class="fa-solid fa-plus border rounded"></i></a>
+                  </div>
+                  <!-- /Nuovo studente -->
+                  <!-- Boolean -->
+                  <div class="col-12 col-md-4 col-lg-6">
+                    <div class="d-block">
+                      <span class="fs-2 me-1">Boolean</span>
+                      <span class="header-tag fw-normal">Piano blaze</span>
+                    </div>
+                    <div>
+                      <span class="header-tag fw-normal">3app</span>
+                      <i class="fa-solid fa-angles-right"></i>
+                      <span class="header-tag fw-normal plus">+</span>
+                      <!-- Hidden sm header tags -->
+                      <span class="header-tag fw-normal d-none d-lg-inline-block">Boolean mobile app</span>
+                      <span class="header-tag fw-normal d-none d-lg-inline-block">Boolean web app</span>
+                      <span class="header-tag fw-normal d-none d-lg-inline-block">Boolean blog app</span>
+                      <!-- /Hidden sm header tags -->
+                    </div>
+                  </div>
+                  <!-- /Boolean -->
+                  <!-- Counter studenti online -->
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <span class="d-block">Studenti online negli ultimi 30 minuti</span>
+                    <span class="fs-2">125</span>
+                  </div>
+                  <!-- /Counter studenti online -->
                 </div>
               </div>
             </header>
