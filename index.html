@@ -70,7 +70,22 @@
       <main>
         <div class="main-wrapper d-flex">
           <!-- Sidebar -->
-          <div class="sidebar"></div>
+            <div class="sidebar container-fluid text-white">
+              <div class="row gy-4 mt-2 flex-column position-relative">
+                <div class="col-12 d-flex gap-lg-3 justify-content-center">
+                  <i class="fa-solid fa-house"></i><span class="sidebar-text d-none d-lg-block">Home</span>
+                </div>
+                <div class="col-12 d-flex gap-lg-3 justify-content-center">
+                  <i class="fa-solid fa-chart-simple"></i><span class="sidebar-text d-none d-lg-block">Stats</span>
+                </div>
+                <div class="col-12 d-flex gap-lg-3 justify-content-center">
+                  <i class="fa-solid fa-signal"></i><span class="sidebar-text d-none d-lg-block">Signal</span>
+                </div>
+                <div class="col-12 d-flex gap-lg-3 justify-content-center position-absolute admin">
+                  <i class="fa-solid fa-gear"></i><span class="sidebar-text d-none d-lg-block">Admin</span>
+                </div>
+              </div>
+            </div>
           <!-- /Sidebar -->
           <!-- Dashboard -->
           <div class="main-content">
@@ -94,11 +109,11 @@
                       <span class="header-tag fw-normal">3app</span>
                       <i class="fa-solid fa-angles-right"></i>
                       <span class="header-tag fw-normal plus">+</span>
-                      <!-- Hidden sm header tags -->
+                      <!-- Hidden sm-md header tags -->
                       <span class="header-tag fw-normal d-none d-lg-inline-block">Boolean mobile app</span>
                       <span class="header-tag fw-normal d-none d-lg-inline-block">Boolean web app</span>
                       <span class="header-tag fw-normal d-none d-lg-inline-block">Boolean blog app</span>
-                      <!-- /Hidden sm header tags -->
+                      <!-- /Hidden sm-md header tags -->
                     </div>
                   </div>
                   <!-- /Boolean -->
@@ -115,7 +130,7 @@
             <!-- Contenuto dashboard -->
             <div class="container-fluid mt-2">
               <div class="row">
-                <div class="col-12 col-lg-8">
+                <div class="col-12 col-lg-8 overflow-hidden">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Quod, mollitia quae accusamus quos recusandae ex minima, rem
                   praesentium, ipsam laborum eius pariatur maxime temporibus sed
@@ -137,7 +152,7 @@
                   Asperiores sunt, sint assumenda architecto quisquam
                   consequatur soluta!
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 overflow-hidden">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Nulla quidem, consequuntur facilis nam cum illum at voluptates
                   laboriosam reprehenderit et quis sapiente ipsam magnam

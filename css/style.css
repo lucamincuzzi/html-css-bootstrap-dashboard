@@ -1,6 +1,6 @@
 :root {
   /* Dimensions */
-  --ms-nav-height: 90px;
+  --ms-nav-height: 95px;
   --ms-sidebar-width: 70px;
   --ms-header-height: 250px;
   /* Colors */
@@ -20,7 +20,7 @@
 
 @media screen and (min-width: 992px) {
   :root {
-    --ms-sidebar-width: 80px;
+    --ms-sidebar-width: 120px;
     --ms-header-height: 145px;
   }
 }
@@ -114,6 +114,8 @@ main {
   overflow-y: auto;
 }
 
+/* MAIN-header */
+
 .main-content header {
   background-color: var(--ms-header-bg-color);
   height: var(--ms-header-height);
@@ -126,10 +128,16 @@ main {
 .header-tag {
     font-size: 15px;
     background-color: var(--ms-header-tag-color);
-    padding: 4px 8px;
+    padding: 3px 8px;
     border-radius: 100px;
 }
 
 .header-tag.plus {
     padding: 5px 9px;
+}
+
+/* Sidebar */
+
+.sidebar .admin{
+    bottom: -550px;
 }
