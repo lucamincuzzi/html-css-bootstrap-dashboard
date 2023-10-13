@@ -1,12 +1,23 @@
 :root {
-    --ms-sidebar-bg-color: #051e34;
+    /* Dimensions */
     --ms-nav-height: 100px;
     --ms-sidebar-width: 70px;
+    --ms-header-height: 300px;
+    /* Colors */
+    --ms-sidebar-bg-color: #051e34;
+    --ms-header-bg-color: #1b72e8;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --ms-header-height: 150px;
+    }
 }
 
 @media screen and (min-width: 992px) {
     :root {
         --ms-sidebar-width: 90px;
+        --ms-header-height: 120px;
     }
 }
 
@@ -41,15 +52,20 @@ nav {
 
 main {
     width: 100%;
-    height: calc(100% - var(--ms-nav-height))
+    height: calc(100% - var(--ms-nav-height));
 }
 
 .main-wrapper {
-    height: 100%
+    height: 100%;
 }
 
 .main-content {
     width: calc(100% - var(--ms-sidebar-width));
     background-color: green;
     overflow-y: auto;
+}
+
+.main-content header {
+    background-color: var(--ms-header-bg-color);
+    height: var(--ms-header-height);
 }
