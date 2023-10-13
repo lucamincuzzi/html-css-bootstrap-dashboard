@@ -49,6 +49,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+table .complete {
+    background-color: green;
+}
+
 /* Nav */
 
 nav {
@@ -110,7 +114,7 @@ main {
 
 .main-content {
   width: calc(100% - var(--ms-sidebar-width));
-  background-color: green;
+  background-color: #f8f9fa;
   overflow-y: auto;
 }
 
@@ -140,4 +144,41 @@ main {
 
 .sidebar .admin{
     bottom: -550px;
+}
+
+/* Main-content */
+
+table img {
+    width: 30px;
+    height: 30px;
+}
+
+table .status {
+    font-size: 12px;
+    padding: 3px 5px;
+}
+
+table .complete::after {
+    content: "Done"
+}
+
+table .process::after {
+    content: "process";
+    font-size: 12px;
+    background-color:rgb(255, 204, 0);
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+table .failed::after {
+    content: "failed";
+    font-size: 12px;
+    background-color: red;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.fa-pencil,
+.fa-trash {
+    color: rgb(77, 77, 77);
 }
