@@ -18,6 +18,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Kanit:wght@100;200;300;400;500&family=Open+Sans:wght@300;400;500;700&family=PT+Sans:wght@400;700&family=Poppins:ital,wght@0,200;0,500;0,600;1,500&family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Boolean Dashboard</title>
@@ -25,41 +32,90 @@
   <body>
     <div class="wrapper">
       <!-- Nav -->
-      <nav></nav>
+      <nav class="d-flex align-items-center">
+        <div class="nav-container">
+          <div class="container-fluid d-flex align-items-center">
+            <!-- Logo -->
+            <img class="logo-img d-lg-none" src="img/mobile-logo.png" alt="logo mobile boolean">
+            <img class="d-none d-lg-inline-block" src="img/logo.svg" alt="logo desktop boolean">
+            <!-- /Logo -->
+            <!-- Ricerca -->
+            <input class="search flex-grow-1 ms-4 me-4 p-2 border-0 rounded" type="text" placeholder="Prova a cercare: Lezioni di Laravel">
+            <!-- /Ricerca -->
+            <!-- Actions -->
+            <div class="desktop-actions d-none d-lg-flex gap-4 me-4">
+              <i class="fa-solid fa-list-ul"></i>
+              <i class="fa-solid fa-circle-question"></i>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <i class="fa-solid fa-bell justify-content-end"></i>
+            <!-- /Actions -->
+          </div>
+        </div>
+      </nav>
       <!-- /Nav -->
       <!-- Main -->
       <main>
         <div class="main-wrapper d-flex">
-            <!-- Sidebar -->
-            <div class="sidebar"></div>
-            <!-- /Sidebar -->
-            <!-- Dashboard -->
-            <div class="main-content">
-              <!-- Header -->
-              <header class="container-fluid"></header>
-              <!-- /Header -->
-              <!-- Contenuto dashboard -->
-              <div class="container-fluid mt-2">
-                <div class="row">
-                  <div class="col-12 col-lg-8">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, mollitia quae accusamus quos recusandae ex minima, rem praesentium, ipsam laborum eius pariatur maxime temporibus sed exercitationem dolores quam optio perspiciatis.
-                    Numquam harum impedit deserunt qui dicta quaerat maxime? Adipisci dignissimos, quasi atque incidunt consequatur, impedit, vel quae voluptatem ea iusto consectetur! Facere non cupiditate temporibus atque, qui eligendi cum in.
-                    Ut repellat hic omnis eius nesciunt accusamus maiores, doloremque commodi quidem porro nulla qui sapiente excepturi corporis odit, placeat repellendus veritatis ullam beatae eos optio quis rem aperiam sed? Mollitia.
-                    Laborum in magnam ipsam iure quas ullam nostrum magni vel laboriosam nulla consectetur labore, ea sint similique itaque delectus et facere atque voluptatum nesciunt. Accusantium voluptatibus quae doloremque odit ullam.
-                    Officiis adipisci aspernatur asperiores aliquid nostrum dolore vero perspiciatis aperiam similique, pariatur dignissimos deserunt necessitatibus illo sunt explicabo magni hic quod rem. Asperiores sunt, sint assumenda architecto quisquam consequatur soluta!
-                  </div>
-                  <div class="col-12 col-lg-4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla quidem, consequuntur facilis nam cum illum at voluptates laboriosam reprehenderit et quis sapiente ipsam magnam repellendus commodi animi libero necessitatibus. Officiis!
-                    Molestiae recusandae maxime vel, necessitatibus saepe dolore eaque fugit quasi aliquam corporis ea culpa praesentium cupiditate neque unde doloribus ducimus voluptatibus alias earum id, maiores possimus illo nihil. Eius, nemo!
-                    Facilis molestias perferendis autem? Nesciunt, provident vel ipsa distinctio, id rerum minus alias cum impedit explicabo illo. Fugit consequatur temporibus est, illum aut eum, delectus dignissimos totam architecto ipsam optio.
-                    Corporis, doloribus voluptates. Assumenda fugit incidunt ipsa quis eveniet vero veritatis temporibus dicta obcaecati possimus illo odio, cumque consequatur illum ex veniam excepturi, soluta aperiam magni at minus nulla sequi!
-                    Voluptatem tenetur, nam maxime sed nemo illum fugit. Libero sit ipsam fugiat, quo dolores consequatur laborum fugit quis nobis esse praesentium hic odio veniam cum eos quaerat optio officiis eveniet?
-                  </div>
+          <!-- Sidebar -->
+          <div class="sidebar"></div>
+          <!-- /Sidebar -->
+          <!-- Dashboard -->
+          <div class="main-content">
+            <!-- Header -->
+            <header class="container-fluid"></header>
+            <!-- /Header -->
+            <!-- Contenuto dashboard -->
+            <div class="container-fluid mt-2">
+              <div class="row">
+                <div class="col-12 col-lg-8">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quod, mollitia quae accusamus quos recusandae ex minima, rem
+                  praesentium, ipsam laborum eius pariatur maxime temporibus sed
+                  exercitationem dolores quam optio perspiciatis. Numquam harum
+                  impedit deserunt qui dicta quaerat maxime? Adipisci
+                  dignissimos, quasi atque incidunt consequatur, impedit, vel
+                  quae voluptatem ea iusto consectetur! Facere non cupiditate
+                  temporibus atque, qui eligendi cum in. Ut repellat hic omnis
+                  eius nesciunt accusamus maiores, doloremque commodi quidem
+                  porro nulla qui sapiente excepturi corporis odit, placeat
+                  repellendus veritatis ullam beatae eos optio quis rem aperiam
+                  sed? Mollitia. Laborum in magnam ipsam iure quas ullam nostrum
+                  magni vel laboriosam nulla consectetur labore, ea sint
+                  similique itaque delectus et facere atque voluptatum nesciunt.
+                  Accusantium voluptatibus quae doloremque odit ullam. Officiis
+                  adipisci aspernatur asperiores aliquid nostrum dolore vero
+                  perspiciatis aperiam similique, pariatur dignissimos deserunt
+                  necessitatibus illo sunt explicabo magni hic quod rem.
+                  Asperiores sunt, sint assumenda architecto quisquam
+                  consequatur soluta!
+                </div>
+                <div class="col-12 col-lg-4">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Nulla quidem, consequuntur facilis nam cum illum at voluptates
+                  laboriosam reprehenderit et quis sapiente ipsam magnam
+                  repellendus commodi animi libero necessitatibus. Officiis!
+                  Molestiae recusandae maxime vel, necessitatibus saepe dolore
+                  eaque fugit quasi aliquam corporis ea culpa praesentium
+                  cupiditate neque unde doloribus ducimus voluptatibus alias
+                  earum id, maiores possimus illo nihil. Eius, nemo! Facilis
+                  molestias perferendis autem? Nesciunt, provident vel ipsa
+                  distinctio, id rerum minus alias cum impedit explicabo illo.
+                  Fugit consequatur temporibus est, illum aut eum, delectus
+                  dignissimos totam architecto ipsam optio. Corporis, doloribus
+                  voluptates. Assumenda fugit incidunt ipsa quis eveniet vero
+                  veritatis temporibus dicta obcaecati possimus illo odio,
+                  cumque consequatur illum ex veniam excepturi, soluta aperiam
+                  magni at minus nulla sequi! Voluptatem tenetur, nam maxime sed
+                  nemo illum fugit. Libero sit ipsam fugiat, quo dolores
+                  consequatur laborum fugit quis nobis esse praesentium hic odio
+                  veniam cum eos quaerat optio officiis eveniet?
                 </div>
               </div>
-              <!-- /Contenuto dashboard -->
             </div>
-            <!-- /Dashboard -->
+            <!-- /Contenuto dashboard -->
+          </div>
+          <!-- /Dashboard -->
         </div>
       </main>
       <!-- /Main -->
